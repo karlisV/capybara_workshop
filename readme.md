@@ -11,7 +11,7 @@ Web Automation project using Ruby+Cucumber+Capybara frameworks
     * `source ~/.bashrc`
     * `rbenv install 2.5.1`
     * `rbenv global 2.5.1`
-3) Download this clone/project
+3) Clone/download this project
 4) `cd /path-to-project`
 5) `gem install bundler`
 6) `bundle install`
