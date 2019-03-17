@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'chromedriver-helper'
+gem 'cucumber'
+gem 'rubocop'
+gem 'selenium-webdriver'
+gem 'test-unit'
+gem 'rspec'
