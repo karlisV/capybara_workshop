@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'capybara'
 gem 'capybara-screenshot'
-gem 'chromedriver-helper'
+gem 'webdrivers'
 gem 'cucumber'
 gem 'rspec'
 gem 'rubocop'

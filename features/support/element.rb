@@ -15,7 +15,17 @@ class Element
   end
 
   def element_on_page?(**options)
-    page.has_css?(@value[:value], options)
+    if @value[:type] == :css
+      page.has_css?(@value[:value], options)
+    else
+      page.has_xpath?(@value[:value], options)
+    end
+  end
+
+  def within_element(**options)
+    page.within(@value[:type], @value[:value], options) do
+      yield
+    end
   end
 
   def send_keys(value)

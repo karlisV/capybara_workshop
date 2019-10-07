@@ -2,7 +2,7 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 require 'selenium-webdriver'
-require 'chromedriver-helper'
+require 'webdrivers'
 require 'test/unit/assertions'
 require 'capybara/rspec'
 
