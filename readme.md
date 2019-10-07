@@ -24,3 +24,11 @@ In the project's directory run command:
 ```
 cucumber
 ```
+####To run tests with built in reporter:
+```
+cucumber --format pretty --format html -o report.html
+```
+####To run tests with specific tags('@wip' tag in example):
+```
+cucumber -t @wip
+```
