@@ -23,7 +23,7 @@ class Element
   end
 
   def within_element(**options)
-    page.within(@value[:type], @value[:value], options) do
+    Capybara.within(@value[:type], @value[:value], options) do
       yield
     end
   end
