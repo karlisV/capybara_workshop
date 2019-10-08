@@ -1,5 +1,4 @@
 Given(/^I am on the landing page$/) do
-  Capybara.visit('/')
-  assert_true(@pages.landing_page.contains_section?('TESTIMONIALS'),
-              'Expected section not found')
+  @pages.landing_page.visit
+  expect(@pages.landing_page.contains_section?('TESTIMONIALS')).to eq(true)
 end

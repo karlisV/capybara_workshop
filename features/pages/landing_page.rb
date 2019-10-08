@@ -9,4 +9,8 @@ class LandingPage
     @section_titles.element_on_page? text: text, visible: true
   end
 
+  def visit
+    Capybara.visit('/')
+  end
+
 end
