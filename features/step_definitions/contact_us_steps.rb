@@ -9,3 +9,12 @@ end
 And(/^I fill in "(.*)" as first name$/) do |input_text|
   @pages.contact_us_page.fill_first_name(input_text)
 end
+
+When(/^I fill in "(.*)" as last name$/) do |input_text|
+  @pages.contact_us_page.fill_last_name(input_text)
+end
+
+When(/^I select "(.*)" option from Topic dropdown$/) do |input_text|
+  @pages.contact_us_page.select_from_topic(input_text)
+  sleep 5
+end
