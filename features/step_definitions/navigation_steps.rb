@@ -9,5 +9,3 @@ end
 When(/^I navigate to Contact Us page$/) do
   @pages.navigation_bar.go_to_contact_us_page
 end
-
-

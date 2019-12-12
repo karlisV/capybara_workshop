@@ -2,7 +2,7 @@
 # -----------------------BEFORE HOOKS ---------------------------------#
 # ---------------------------------------------------------------------#
 Before() do
-  Capybara.default_max_wait_time = 15
+  # Capybara.default_max_wait_time = 15
   @pages = Pages.new
 end
 
