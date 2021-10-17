@@ -6,6 +6,7 @@ require 'webdrivers'
 require 'capybara/rspec'
 
 APP_HOST = 'https://www.testdevlab.com'.freeze
+HEADLESS = ENV['HEADLESS'] == 'true'
 
 Capybara.configure do |config|
   config.default_driver = :selenium
@@ -15,7 +16,12 @@ Capybara.configure do |config|
 end
 
 Capybara.register_driver(:selenium) do |app|
-  Capybara::Selenium::Driver.new(app, browser: :chrome)
+  browser_options = ::Selenium::WebDriver::Chrome::Options.new
+  if HEADLESS
+    browser_options.args << '--headless'
+    browser_options.args << '--window-size=1800,1200'
+  end
+  Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: browser_options)
 end
 
 World(Capybara::RSpecMatchers)
