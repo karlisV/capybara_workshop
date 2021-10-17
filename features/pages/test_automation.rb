@@ -1,8 +1,10 @@
-# Contains all navigation section's elements
+# Contains all test automation page elements
 class TestAutomationPage
+
   include Capybara::DSL
+
   def initialize
-    @section_titles = Element.new(:css, 'h6.section-name')
+    @section_titles = Element.new(:css, '.h6.section-name')
   end
 
   def visit

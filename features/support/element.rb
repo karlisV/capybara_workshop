@@ -1,9 +1,9 @@
-# contains methods for website elements
+# contains interactions for website elements
 class Element
   include RSpec::Matchers
   include Capybara::DSL
   def initialize(type, value)
-    @value = Hash[type: type, value: value]
+    @value = { type: type, value: value }
   end
 
   def find
@@ -22,10 +22,8 @@ class Element
     end
   end
 
-  def within_element(**options)
-    Capybara.within(@value[:type], @value[:value], options) do
-      yield
-    end
+  def within_element(**options, &block)
+    Capybara.within(@value[:type], @value[:value], options, &block)
   end
 
   def send_keys(value)

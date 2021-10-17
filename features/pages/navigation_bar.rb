@@ -1,6 +1,8 @@
-# Contains all navigation section's elements
+# Contains all navigation section elements
 class NavigationBar
+
   include Capybara::DSL
+
   def initialize
     @solutions_section = Element.new(:xpath, '//div[text() = "Solutions"]')
     @test_automation_btn = Element.new(:css, '.menu-item a[href*="test-automation"]')
