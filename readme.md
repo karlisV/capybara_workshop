@@ -34,6 +34,7 @@ rvm --default use 2.7.4
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 ```
+Command above ^ should be run in one line (copy/paste the whole section)
 ```shell
 sudo apt-get update
 ```
