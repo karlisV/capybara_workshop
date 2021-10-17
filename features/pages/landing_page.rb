@@ -1,8 +1,10 @@
-# Contains all landing page's elements
+# Contains all landing page elements
 class LandingPage
+
   include Capybara::DSL
+
   def initialize
-    @section_titles = Element.new(:css, 'h6.section-name')
+    @section_titles = Element.new(:css, '.h6.section-name')
   end
 
   def contains_section?(text)
