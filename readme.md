@@ -7,10 +7,11 @@ Web Automation project using Ruby+Cucumber+Capybara frameworks
 1) Install Chrome browser;
 2) Install any IDE (VS Code is recommended, there are suggested extensions already specified in the project)
 3) Open Terminal;
-4) Install RVM: ```sh \curl -sSL https://get.rvm.io | bash```
+4) Install RVM: ```\curl -sSL https://get.rvm.io | bash```
 5) Quit the terminal and reopen it;
-6) Install ruby: ```sh rvm install 2.7.4```
-7) Set the default ruby version ```sh rvm --default use 2.7.4```
+6) Install ruby: ```rvm install 2.7.4```
+7) Set the default ruby version ```rvm --default use 2.7.4```
+8) Clone the project: ```git clone https://github.com/karlisV/capybara_workshop.git```
 
 ### Win
 
