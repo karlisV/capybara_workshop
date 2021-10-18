@@ -12,6 +12,8 @@ Web Automation project using Ruby+Cucumber+Capybara frameworks
 6) Install ruby: ```rvm install 2.7.4```
 7) Set the default ruby version ```rvm --default use 2.7.4```
 8) Clone the project: ```git clone https://github.com/karlisV/capybara_workshop.git```
+9) Install dependencies:```bundle install```
+10) If command above fails, install the bundler and then rerun the command:```gem install bundler```
 
 ### Win
 
@@ -51,7 +53,15 @@ git clone https://github.com/karlisV/capybara_workshop.git
 ```bash
 cd capybara_workshop
 ```
-10) Open VSCode through the terminal (to automatically establish remote connection): 
+11) Install dependencies:
+```bash
+bundle install 
+```
+12) If command above fails, install the bundler and then rerun the command:
+```bash
+gem install bundler
+```
+13) Open VSCode through the terminal (to automatically establish remote connection): 
 ```bash
 code .
 ```
