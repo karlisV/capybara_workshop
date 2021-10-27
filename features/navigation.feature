@@ -10,3 +10,7 @@ Feature: As a visitor I want to be able to navigate between different screens
   Scenario: Navigate to Contact Us page
     When I navigate to Contact Us page
     Then I should see Contact Us page
+
+  Scenario: Navigate to Mobile application testing page
+    When I navigate to Mobile application testing page
+    Then I should see Mobile application testing page

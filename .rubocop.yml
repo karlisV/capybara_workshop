@@ -5,6 +5,9 @@ AllCops:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/StringConcatenation:
+  Enabled: false
+
 Layout/EmptyLinesAroundClassBody:
   Enabled: false
 
